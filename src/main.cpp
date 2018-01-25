@@ -1,8 +1,15 @@
 #include <iostream>
-#include <GLFW/glfw3.h>
-#include "Dummy.h"
+#include "Engine.h"
+
+using namespace std;
 
 int main(int argc, char **argv) {
-    std::cout << "hello world!";
+    unique_ptr<Engine> engine = unique_ptr<Engine>(new Engine);
+    engine->initialize();
+    engine->createWindow(640, 480, "This is title");
+    engine->makeCurrent();
+    engine->test();
+    engine->destroyWindow();
+    
     return 0;
 }
