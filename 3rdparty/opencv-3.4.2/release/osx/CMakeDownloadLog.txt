@@ -1,2 +1,0 @@
-use_cache "/Users/joonkyun/Downloads/opencv-3.4.2/.cache"
-#match_hash_in_cmake_cache "OCV_DOWNLOAD_IPPICV_HASH_3rdparty_ippicv_ippicv_2017u3_mac_intel64_general_20180518_tgz"
